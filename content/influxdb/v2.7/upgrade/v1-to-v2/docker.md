@@ -62,6 +62,8 @@ to provide setup credentials:
 - `DOCKER_INFLUXDB_INIT_ADMIN_TOKEN`: API token to associate with the admin user.
   If not set, InfluxDB automatically generates a token.
 
+Instead of DOCKER_INFLUXDB_INIT_USERNAME and DOCKER_INFLUXDB_INIT_PASSWORD, also or DOCKER_INFLUXDB_INIT_USERNAME_FILE and DOCKER_INFLUXDB_INIT_PASSWORD_FILE can be used to pass the values as a file (see also 'secrets' in docker-compose).
+
 ### File system mounts
 The InfluxDB upgrade process requires extra volumes to be mounted into the 2.x container.
 Use **environment variables** and **Docker mounts** to specify and configure the
